@@ -14,9 +14,11 @@ struct ContentView: View {
         NavigationStack{
             VStack {
                 Spacer()
+                //画面２へのリンク
                 NavigationLink(destination: SecondView().navigationTitle("画面２")){
                     Text("Second Viewへ")
                 }
+                //画面3へのボタン
                 Button(){
                     isShowThirdView = true
                 } label: {
